@@ -1,5 +1,4 @@
 .Navbar {
-  z-index: 999;
   border: solid rgb(189, 183, 183);
   height: 4rem;
   display: flex;
@@ -9,6 +8,9 @@
   padding: 1rem;
   padding-right: 2rem;
   justify-content: space-between;
+}
+.Navbar .fa-bars {
+  cursor: pointer;
 }
 
 .navleft {

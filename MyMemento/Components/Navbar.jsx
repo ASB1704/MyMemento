@@ -6,7 +6,7 @@ console.log(logo,"hthtt");
 export const Navbar = ({sideBar}) => {
 
     const Sidebarhandler=()=>{
-        sideBar.current.classList.add('sideBarOpen')
+        sideBar.current.classList.toggle('sideBarOpen')
     }
   return (
     <div className='Navbar'>

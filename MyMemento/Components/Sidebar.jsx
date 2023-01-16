@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react'
 import "../src/Css/Sidebar.css"
 
 export const Sidebar = ({sideBar}) => {

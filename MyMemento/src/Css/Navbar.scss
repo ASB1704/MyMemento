@@ -8,13 +8,15 @@
     padding: 1rem;
     padding-right: 2rem;
     justify-content: space-between;
+    .fa-bars{
+        cursor: pointer;
+    }
  
 }
 .navleft{
     display: flex;
     gap: 2rem;
     align-items: center;
-
 
 }
 .logoandname{
