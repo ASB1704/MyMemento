@@ -1,0 +1,20 @@
+.uploadAndCreate {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.uploadAndCreate i:nth-child(1) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+}
+.uploadAndCreate i:nth-child(2) {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  font-size: 3rem;
+}/*# sourceMappingURL=Photomain.css.map */

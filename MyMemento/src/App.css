@@ -1,0 +1,15 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: all 0.1s linear;
+
+}
+i{
+  font-size: 1.5rem;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+
+}

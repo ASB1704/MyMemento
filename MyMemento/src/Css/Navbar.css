@@ -1,0 +1,33 @@
+.Navbar {
+  z-index: 999;
+  border: solid rgb(189, 183, 183);
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  padding-right: 2rem;
+  justify-content: space-between;
+}
+
+.navleft {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.logoandname {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.logoandname img {
+  width: 2rem;
+}
+
+.navright {
+  display: flex;
+  gap: 2rem;
+}/*# sourceMappingURL=Navbar.css.map */
