@@ -5,16 +5,213 @@
   justify-content: center;
   align-items: center;
 }
-.uploadAndCreate i:nth-child(1) {
+.uploadAndCreate .fa-cloud-arrow-up {
+  cursor: pointer;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 5rem;
 }
-.uploadAndCreate i:nth-child(2) {
-  position: absolute;
+.uploadAndCreate .fa-circle-plus {
+  position: fixed;
   bottom: 5%;
   right: 5%;
-  font-size: 3rem;
+  font-size: 4rem;
+  filter: drop-shadow();
+}
+
+.photo_wrapper {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  padding: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+.photo_wrapper .photo_box {
+  cursor: pointer;
+  height: 10rem;
+  width: 10rem;
+  position: relative;
+  transition: all 0.3s linear;
+}
+.photo_wrapper .photo_box:hover .photo_box_hover {
+  opacity: 1;
+}
+.photo_wrapper .photo_box:hover {
+  transform: scale(0.95);
+}
+.photo_wrapper .photo_box .photo_box_hover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.295);
+  align-items: flex-start;
+  padding: 0.8em 0.8rem 0 0.8rem;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+.photo_wrapper .photo_box .photo_box_hover #photo_check {
+  cursor: pointer;
+  width: 1rem;
+  height: 1rem;
+}
+.photo_wrapper .photo_box .photo_box_hover .fa-ellipsis-vertical {
+  color: #fff;
+}
+.photo_wrapper .photo_box:nth-child(1) {
+  display: grid;
+  place-items: center;
+  border: 2px dotted #333;
+  border-radius: 10px;
+}
+.photo_wrapper .photo_box img {
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Uploadwrapper {
+  display: flex;
+  background-color: #fff;
+  border: 2px solid rgba(51, 51, 51, 0.295);
+  border-radius: 10px;
+  width: 60%;
+  height: 80%;
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.2s linear;
+  gap: 2rem;
+  padding: 2rem 2rem;
+}
+.Uploadwrapper button {
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #fff;
+  color: #22E2E2;
+  border: 1px solid black;
+  border-color: #22E2E2;
+}
+.Uploadwrapper button:nth-child(3) {
+  color: #fff;
+  background-color: #22E2E2;
+  border: none;
+}
+.Uploadwrapper .fa-circle-xmark {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  cursor: pointer;
+}
+.Uploadwrapper .uploadbox {
+  border-radius: 10px;
+  font-size: 2rem;
+  border: 2px dotted #333;
+  width: 70%;
+  padding: 5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.Uploadwrapper .uploadbox i {
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+.upload {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.loader_wrapper {
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(51, 51, 51, 0.349);
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 10px solid #FFF;
+  border-radius: 50%;
+  position: relative;
+  transform: rotate(45deg);
+  box-sizing: border-box;
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  inset: -10px;
+  border-radius: 50%;
+  border: 10px solid aqua;
+  -webkit-animation: prixClipFix 2s infinite linear;
+          animation: prixClipFix 2s infinite linear;
+}
+
+@-webkit-keyframes prixClipFix {
+  0% {
+    -webkit-clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+            clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+  }
+  25% {
+    -webkit-clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+            clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+  }
+  50% {
+    -webkit-clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
+            clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
+  }
+  75% {
+    -webkit-clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+            clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+  }
+  100% {
+    -webkit-clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+            clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+}
+
+@keyframes prixClipFix {
+  0% {
+    -webkit-clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+            clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+  }
+  25% {
+    -webkit-clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+            clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+  }
+  50% {
+    -webkit-clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
+            clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
+  }
+  75% {
+    -webkit-clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+            clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+  }
+  100% {
+    -webkit-clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+            clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
 }/*# sourceMappingURL=Photomain.css.map */

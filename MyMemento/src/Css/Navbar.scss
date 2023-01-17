@@ -31,5 +31,10 @@
 .navright{
     display: flex;
     gap: 2rem;
+    
+
+    .fa-circle-user , .fa-magnifying-glass{
+        color: aqua;
+    }
 }
 

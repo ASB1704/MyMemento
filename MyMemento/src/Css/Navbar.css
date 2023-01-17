@@ -32,4 +32,7 @@
 .navright {
   display: flex;
   gap: 2rem;
+}
+.navright .fa-circle-user, .navright .fa-magnifying-glass {
+  color: aqua;
 }/*# sourceMappingURL=Navbar.css.map */

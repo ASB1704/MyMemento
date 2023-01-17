@@ -21,7 +21,7 @@ export const Navbar = ({sideBar}) => {
     </div >
     <div className="navright">
     <i className="fa-solid fa-magnifying-glass"></i>
-    <i class="fa-solid fa-circle-user"></i>
+    <i className="fa-solid fa-circle-user"></i>
     </div>
     </div>
     
