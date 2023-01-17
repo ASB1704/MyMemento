@@ -7,6 +7,7 @@ import "../src/Css/Photomain.css"
 export const Photomain = () => {
     const Uploadref = useRef();
     const inputRef = useRef();
+    const [albumArray,setAlbumArray] = useState([]);
     const [imagesArray,setimagesArray] = useState([]);
     const [Data,setData] = useState([]);
     const [loading,setLoading] = useState(false);
@@ -53,6 +54,20 @@ export const Photomain = () => {
       } 
     }
     
+    const delete_photo_Handler = async (id) => {
+       let imgdata = await axios.delete(`http://localhost:5000/delete_img/${id}`)
+       setimagesArray(imgdata.data.data)
+    }
+
+    const select_img_handler = (idx) =>{
+        console.log(idx);
+        albumArray.push(imagesArray[idx]);
+    }
+
+    const createAlbumHandler = () => {
+      console.log(albumArray, " albumArray");
+    }
+    
   return (
     <>
 
@@ -62,17 +77,17 @@ export const Photomain = () => {
     {loading?<div className="loader_wrapper">
     <span className="loader"></span>
     </div>:""}
-        <i className="fa-sharp fa-solid fa-circle-plus"></i>
+        <i onClick={createAlbumHandler} className="fa-sharp fa-solid fa-circle-plus"></i>
         <div className="photo_wrapper">
           <div className='photo_box' onClick={ShowUpload} style={{display:`${imagesArray.length==0?'none':"grid"}`}}>
             Add Photos
           </div>
           {
-            imagesArray.length!=0?imagesArray.map((url)=>{
+            imagesArray.length!=0?imagesArray.map((url,idx)=>{
               return <div className='photo_box' key={url}>
                 <div className='photo_box_hover'>
-                  <input type="checkbox" id="photo_check" />
-                  <i className="fa-solid fa-ellipsis-vertical"></i>
+                  <input onClick={()=>select_img_handler(idx)} type="checkbox" id="photo_check" />
+                  <i onClick={()=>delete_photo_Handler(idx)} className="fa-solid fa-ellipsis-vertical"></i>
                 </div>
                 <img  src={url} alt={url} />
               </div>
