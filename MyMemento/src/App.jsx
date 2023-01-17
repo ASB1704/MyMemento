@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react'
 import './App.css'
 import { Navbar } from '../Components/Navbar'
-import { Photocomponent } from '../Components/photocomponent'
+import { Photocomponent } from '../Components/Photocomponent'
 
 function App() {
   const sideBar = useRef();
