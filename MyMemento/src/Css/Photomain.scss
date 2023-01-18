@@ -15,11 +15,11 @@
         }
 
         .fa-circle-plus {
+            cursor: pointer;
             position: fixed;
             bottom:5%;
             right: 5%;
             font-size: 4rem;
-            filter: drop-shadow();
         }
 }
 
@@ -57,8 +57,8 @@
             transition: all 0.2s linear;
             #photo_check{
                 cursor: pointer;
-                width: 1rem;
-                height: 1rem;
+                width: 1.5rem;
+                height: 1.5rem;
             }
             .fa-ellipsis-vertical{
                 color: #fff;
@@ -80,11 +80,6 @@
     }
 
 }
-
-.photo_hover{
-    transform: scale(0.95);
-}
-
 
 // UPLOAD CONTAINER //
 .Uploadwrapper{

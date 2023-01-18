@@ -14,11 +14,11 @@
   font-size: 5rem;
 }
 .uploadAndCreate .fa-circle-plus {
+  cursor: pointer;
   position: fixed;
   bottom: 5%;
   right: 5%;
   font-size: 4rem;
-  filter: drop-shadow();
 }
 
 .photo_wrapper {
@@ -57,8 +57,8 @@
 }
 .photo_wrapper .photo_box .photo_box_hover #photo_check {
   cursor: pointer;
-  width: 1rem;
-  height: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 .photo_wrapper .photo_box .photo_box_hover .fa-ellipsis-vertical {
   color: #fff;
@@ -76,10 +76,6 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.photo_hover {
-  transform: scale(0.95);
 }
 
 .Uploadwrapper {
