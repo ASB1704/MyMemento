@@ -102,6 +102,10 @@
   color: #fff;
 }
 
+.photo_hover {
+  transform: scale(0.95);
+}
+
 .Uploadwrapper {
   display: flex;
   background-color: #fff;
