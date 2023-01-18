@@ -62,9 +62,7 @@ export const Photomain = () => {
 
   return (
     <>
-
       {/* LOADER */}
-
       <div className='uploadAndCreate'>
         {loading ? <div className="loader_wrapper">
           <span className="loader"></span>
@@ -77,6 +75,9 @@ export const Photomain = () => {
           {
             imagesArray.length != 0 ? imagesArray.map((url,index) => {
               return <div className='photo_box' key={url}>
+                <div  className='photo_box_hover'>
+                  <input onClick={()=>select_img_handler(idx)} type="checkbox" id="photo_check" />
+                  <i onClick={()=>delete_photo_Handler(idx)} className="fa-solid fa-ellipsis-vertical"></i>
                 <div className='photo_box_hover'>
                   <input type="checkbox" id="photo_check" />
                   <i className="fa-solid fa-ellipsis-vertical" onClick={()=>showeditlist(index)}></i>
@@ -101,10 +102,9 @@ export const Photomain = () => {
             }) : <i style={{ display: `${loading ? 'none' : "block"}` }} className="fa-solid fa-cloud-arrow-up" onClick={ShowUpload}></i>
           }
         </div>
-      </div>
-
-      {/* UPLOAD CONTAINER */}
-      <div className='Uploadwrapper' ref={Uploadref}>
+    </div>
+    {/* UPLOAD CONTAINER */}
+    <div className='Uploadwrapper' ref={Uploadref}>
         <i className="fa-solid fa-circle-xmark" onClick={closeupload}></i>
         <div className="uploadbox">
           <i className="fa-solid fa-cloud-arrow-up"></i>
