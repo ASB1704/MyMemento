@@ -1,0 +1,109 @@
+.templateWrapper {
+  position: fixed;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  display: flex;
+  visibility: hidden;
+}
+.templateWrapper .demoPage {
+  border-radius: 8px 0 0 8px;
+  border: 2px solid #eee;
+  background-color: #fff;
+  overflow: hidden !important;
+}
+.templateWrapper .demoPage img {
+  width: 100%;
+}
+.templateWrapper .demoPage:nth-child(2) img {
+  border-radius: 8px;
+  width: 100% !important;
+  height: 100%;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+.templateWrapper .demoPage:nth-child(3) {
+  position: relative;
+  padding: 0.3rem;
+}
+.templateWrapper .demoPage:nth-child(3) div {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  height: 45%;
+  padding: 0.3rem;
+}
+.templateWrapper .demoPage:nth-child(3) div img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.templateWrapper .demoPage:nth-child(3) div img:nth-child(2) {
+  width: 60%;
+}
+.templateWrapper .demoPage:nth-child(3) div img:nth-child(1) {
+  width: 40%;
+}
+.templateWrapper .demoPage:nth-child(4) {
+  position: relative;
+}
+.templateWrapper .demoPage:nth-child(4) img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0.1rem;
+}
+.templateWrapper .demoPage:nth-child(4) img:nth-child(1) {
+  width: 70%;
+  height: 50%;
+}
+.templateWrapper .demoPage:nth-child(4) img:nth-child(2) {
+  width: 30%;
+  height: 50%;
+  right: 0;
+}
+.templateWrapper .demoPage:nth-child(4) img:nth-child(3) {
+  width: 30%;
+  height: 50%;
+  bottom: 0;
+}
+.templateWrapper .demoPage:nth-child(4) img:nth-child(4) {
+  width: 70%;
+  height: 50%;
+  bottom: 0;
+  right: 0;
+}
+.templateWrapper .demoPage:nth-child(5) img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 8px;
+}
+.templateWrapper .demoPage:nth-child(6) img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 8px;
+}
+.templateWrapper .coverpage .cover_info {
+  position: absolute;
+  flex-grow: 1;
+  flex-direction: column;
+  display: flex;
+  gap: 1rem;
+  right: 10%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+.templateWrapper .coverpage img {
+  width: 50%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.showTemp {
+  visibility: visible;
+}/*# sourceMappingURL=template.css.map */
