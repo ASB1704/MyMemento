@@ -15,7 +15,7 @@ export const Template2 = ({tempImg}) => {
           <h3>My-Album</h3>
           <p>22 jan 2020</p>
         </div>
-        <img src="https://images.unsplash.com/photo-1674515625118-a7d9eb5c167a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="cover page" />
+        <img src={url[0]} alt="cover page" />
       </div>
       <div className="demoPage">
         <img src={url[2]} alt="1" />

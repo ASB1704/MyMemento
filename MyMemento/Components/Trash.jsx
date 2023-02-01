@@ -9,7 +9,7 @@ export const Trash = () => {
 
     const fetchTrash = async () => {
       const {data} = await axios.get(url+'/trash');
-      setTrash(data.data[0]);
+      setTrash(data.data);
     }
 
     useEffect(()=>{
