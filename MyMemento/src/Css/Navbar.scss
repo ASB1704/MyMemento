@@ -1,40 +1,111 @@
-.Navbar{
-    border: solid rgb(189, 183, 183);
+@import './variable';
+.Navbar {
     height: 4rem;
     display: flex;
     align-items: center;
     background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 1rem;
     padding-right: 2rem;
     justify-content: space-between;
-    .fa-bars{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.178);
+    
+    i {
         cursor: pointer;
     }
- 
-}
-.navleft{
-    display: flex;
-    gap: 2rem;
-    align-items: center;
 
-}
-.logoandname{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    img{
-        width: 2rem;
+    .navleft {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+
+        .logoandname {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+
+            img {
+                width: 2rem;
+            }
+        }
+    }
+
+    .navright {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        i{
+            color: $bg-color;
+        }
+        div{
+            gap: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        input{
+            padding: 0.5rem 1rem;
+            border: 0 solid $bg-color;
+            transition: all 0.5s linear;
+            transform-origin: left;
+            width: 0;
+            &:focus{
+                outline: none;
+            }
+        }
+        .search-bar{
+            border-bottom: 2px solid $bg-color;
+            width: 100%;
+        }
     }
 }
-.navright{
-    display: flex;
-    gap: 2rem;
+
+.nav-icon4 {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
     
+       span {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: #333;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
 
-    .fa-circle-user , .fa-magnifying-glass{
-        color: aqua;
+        &:nth-child(1) {
+            top: 0px;
+            transform-origin: left center;
+        }
+        &:nth-child(2) {
+            top: 8px;
+            transform-origin: left center;
+        }
+        &:nth-child(3) {
+            top: 16px;
+            transform-origin: left center;
+        }
+        
     }
 }
-
+.nav-icon4.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 8px;
+}
+.nav-icon4.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+.nav-icon4.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 22px;
+    left: 7px;
+}

@@ -1,0 +1,113 @@
+.templateWrapper{
+    position: fixed;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    transform: translate(-50%,-50%);
+    justify-content: center;
+    display: flex;
+    visibility: hidden;
+    .demoPage{
+        border-radius: 8px 0 0 8px;
+        border: 2px solid #eee;
+        background-color: #fff;
+        overflow: hidden !important;
+        img{
+            width: 100%;
+        }
+        &:nth-child(2){
+            img{
+                border-radius: 8px;
+                width: 100% !important;
+                height: 100%;
+                object-fit:cover !important;
+            }
+        }
+        &:nth-child(3){
+            position: relative;
+            padding: 0.3rem;
+            div{
+                position: absolute;
+                display: flex;
+                bottom: 0;
+                height: 45%;
+                padding: 0.3rem;
+                img{
+                    object-fit: cover;
+                    &:nth-child(2){
+                        width: 60%;
+                    }
+                    &:nth-child(1){
+                        width: 40%;
+                    }
+                }
+            }
+        }
+        &:nth-child(4){
+            position: relative;
+            img{
+                position: absolute;
+                object-fit: cover;
+                padding: 0.1rem;
+                &:nth-child(1){
+                    width: 70%;
+                    height: 50%;
+                }
+                &:nth-child(2){
+                    width: 30%;
+                    height: 50%;
+                    right: 0;
+                }
+                &:nth-child(3){
+                    width: 30%;
+                    height: 50%;
+                    bottom: 0;
+                }
+                &:nth-child(4){
+                    width: 70%;
+                    height: 50%;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+           
+        }
+        &:nth-child(5){
+            img{
+                height: 100%;
+                object-fit: cover;
+                border: 8px;
+            }
+        }
+        &:nth-child(6){
+            img{
+                height: 100%;
+                object-fit: cover;
+                border: 8px;
+            }
+        }
+       
+    }
+    
+    .coverpage{
+        .cover_info{
+            position: absolute;
+            flex-grow: 1;
+            flex-direction: column;
+            display: flex;
+            gap: 1rem;
+            right: 10%;
+            top: 40%;
+            transform: translate(-50%,-50%);
+        }
+        img{
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.showTemp{
+   visibility: visible;
+}

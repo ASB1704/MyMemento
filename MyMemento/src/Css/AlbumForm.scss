@@ -1,0 +1,114 @@
+@import './variable';
+.AlbumFormWrapper{
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    max-width: 40rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background: #fff;
+    box-shadow: 0 0 8px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1rem;
+    gap: 1rem;
+    border-radius: 10px;
+    transition: all 0.15s linear;
+
+    input{
+        font-size: 1.2rem;
+        border: none;
+        border-bottom: 1px solid #333;
+        padding:0.3rem;
+        &:focus{
+            outline: none;
+        }
+    }
+    .album_slider_wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        position: relative;
+        p{
+            font-size: 1.5rem;
+        }
+        button{
+            align-self: flex-end;
+            color: #2082cb;
+            cursor: pointer;
+            transition: all 0.2s linear;
+            border: none;
+            &:hover{
+                text-decoration:underline;
+            }
+        }
+        .album_slider{
+            display: flex;
+            overflow-x: scroll;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+            gap: 2rem;
+            padding: 0 2rem;
+            .albums{
+                border-radius: 5px;
+                min-width: 16rem;
+                height: 10rem;
+                background: #D9D9D9;
+                transition: all 0.3s linear;
+                transform: translateX(0);
+                display: flex;
+                justify-content: space-around;
+                padding-bottom: 0.5rem;
+                button{
+                    cursor: pointer;
+                    padding: 0.5rem 1.5rem;
+                    border-radius: 5px;
+                    background: #2082cb;
+                    color: #fff;
+                }
+                    background-position: 50%;
+                    background-image: url('../../src/assets/cover1.jpeg');
+                    background-size: 90% 150%;
+                    background-repeat: no-repeat;
+            }
+        }
+        i{
+            position: absolute;
+            transform: translateY(-50%);
+            top: 50%;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        .fa-chevron-left{
+            left: 0;
+        }
+        .fa-chevron-right{
+            right: 0;
+        }
+    }
+    .album-btns{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        align-self: center;
+        button{
+            padding: 0.5rem 1.5rem;
+            border: 2px solid #2082cb;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            color: #fff;
+            background: #2082cb;
+            transition: all 0.2s linear;
+            cursor: pointer;
+            border: 2px solid #2082cb;
+            &:hover{
+                background: #fff;
+                color: #2082cb;
+            }
+        }
+    }
+}
