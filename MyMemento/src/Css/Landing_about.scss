@@ -1,0 +1,46 @@
+.Landing_about {
+    background-color: #ffeddf;
+    height: 100vh;
+    display: flex;
+
+    .img {
+        position: relative;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 60vh;
+            position: absolute;
+            z-index: 9999;
+        }
+
+        svg {
+            position: absolute;
+            height: 90vh;
+            z-index: 99;
+        }
+
+    }
+
+    .description {
+        width: 40%;
+        font-family: 'Cormorant Garamond', serif;
+        border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-size: 5rem;
+        }
+       .describe{
+        border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+    }
+
+}

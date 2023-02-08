@@ -1,0 +1,35 @@
+.Landing_main {
+  position: relative;
+  display: flex;
+  height: 91vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #1C2A4A;
+}
+.Landing_main .Getstarted {
+  position: absolute;
+  bottom: 5%;
+  color: #fff;
+  gap: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+.Landing_main .Getstarted img {
+  height: 15rem;
+  width: 15rem;
+}
+.Landing_main .Getstarted button {
+  font-family: "Lora", serif;
+  display: flex;
+  gap: 1rem;
+  background-color: #ffeddf;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.Landing_main .Getstarted .sroll {
+  font-family: "Lora", serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+}/*# sourceMappingURL=Landing_main.css.map */

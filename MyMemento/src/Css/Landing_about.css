@@ -1,0 +1,40 @@
+.Landing_about {
+  background-color: #ffeddf;
+  height: 100vh;
+  display: flex;
+}
+.Landing_about .img {
+  position: relative;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Landing_about .img img {
+  height: 60vh;
+  position: absolute;
+  z-index: 9999;
+}
+.Landing_about .img svg {
+  position: absolute;
+  height: 90vh;
+  z-index: 99;
+}
+.Landing_about .description {
+  width: 40%;
+  font-family: "Cormorant Garamond", serif;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Landing_about .description p {
+  font-size: 5rem;
+}
+.Landing_about .description .describe {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}/*# sourceMappingURL=Landing_about.css.map */
