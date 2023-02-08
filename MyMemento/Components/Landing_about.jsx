@@ -13,6 +13,7 @@ export const Landing_about = () => {
         </svg>
       </div>
       <div className='description'>
+        <div className="tagline">
         <span>safekeeping moments</span>
         <p>forever</p>
         <svg width="144" height="16" viewBox="0 0 144 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,6 +25,7 @@ export const Landing_about = () => {
             <circle cx="136" cy="8" r="8" fill="#1E1E1E" />
           </g>
         </svg>
+        </div>
 
        <div className="describe">
        <span>Cherish those heartwarming memories</span>

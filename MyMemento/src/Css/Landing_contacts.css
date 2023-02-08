@@ -1,0 +1,16 @@
+.Landing_contacts {
+  border: 2px solid red;
+  background-color: #ffeddf;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Landing_contacts .rdinfo {
+  border: 2px soild red;
+  height: 20vh;
+}
+.Landing_contacts .asbinfo {
+  border: 2px soild red;
+  height: 20vh;
+}/*# sourceMappingURL=Landing_contacts.css.map */

@@ -25,18 +25,37 @@
     }
 
     .description {
+        position: relative;
         width: 40%;
         font-family: 'Cormorant Garamond', serif;
-        border: 2px solid red;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        p{
-            font-size: 5rem;
+        gap: 2rem;
+        .tagline{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            span{
+                font-size: 1.8rem;
+                position: absolute;
+                top: 10%;
+                right: 2%;
+            }
+            p{
+                font-size: 10rem;
+                font-weight: lighter;
+            }
+            svg{
+                height: 0.5rem;
+            }
         }
+
        .describe{
-        border: 2px solid red;
+        font-size: 1.5rem;
         display: flex;
         flex-direction: column;
         align-items: end;
