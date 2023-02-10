@@ -11,12 +11,12 @@ export const Photocomponent = ({sideBar,nav_ref}) => {
   return (
     <main className='Photo_main_wrapper'>
         <Sidebar nav_ref={nav_ref} sideBar={sideBar}/>
-          <Routes>
-            <Route path='/' element={ <Photomain />}/>
-            <Route path='/album' element={<AlbumComponent/>}/>
-            <Route path='/trash' element={<Trash/>}/>
-            <Route path='/fav' element={<Favourite />}/>
-          </Routes>
+        <Routes>
+          <Route path='./photo' element={ <Photomain />}/>
+          <Route path='./album' element={<AlbumComponent/>}/>
+          <Route path='./trash' element={<Trash/>}/>
+          <Route path='./fav' element={<Favourite />}/>
+        </Routes>
     </main>
   )
 }

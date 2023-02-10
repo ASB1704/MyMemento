@@ -8,11 +8,7 @@ import App from './App'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Landingpage/>}/>
-          <Route path='/app/*' element={<App/>}/>
-          <Route path='/login' element={<SignUpSignIn/>}/>
-        </Routes>
+      <App/>
     </BrowserRouter>
   </React.StrictMode>,
 )
