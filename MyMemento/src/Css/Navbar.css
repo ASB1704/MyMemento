@@ -53,6 +53,11 @@
   border-bottom: 2px solid #1D70A2;
   width: 100%;
 }
+.Navbar .navright img {
+  width: 2rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
 
 .nav-icon4 {
   width: 30px;

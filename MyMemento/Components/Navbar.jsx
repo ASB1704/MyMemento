@@ -2,7 +2,15 @@ import React, { useEffect, useState } from 'react'
 import { useRef } from 'react';
 import "../src/Css/Navbar.css"
 import logo from "../src/assets/logo.png"
+
 export const Navbar = ({sideBar,nav_ref}) => {
+  const [photoURL,setPhotoURL] = useState("");
+  useEffect(()=>{    
+    const payload = localStorage.getItem('auth');
+    const obj = JSON.parse(payload);
+    setPhotoURL(obj.photoURL);
+  },[]);
+
   const searchRef = useRef();
   const searchHandler = () => {
     searchRef.current.classList.toggle('search-bar')
@@ -30,7 +38,7 @@ export const Navbar = ({sideBar,nav_ref}) => {
         <input ref={searchRef} type="text" placeholder='search photos / album'/>  
         <i onClick={searchHandler} className="fa-solid fa-magnifying-glass"></i>
         </div>
-      <i className="fa-solid fa-circle-user"></i>
+        <img src={photoURL} referrerPolicy="no-referrer"/>
       </div>
   </nav>
   )

@@ -57,6 +57,11 @@
             border-bottom: 2px solid $bg-color;
             width: 100%;
         }
+        img {
+            width: 2rem;
+            aspect-ratio: 1;
+            border-radius: 50%;
+        }
     }
 }
 
