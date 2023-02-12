@@ -3,7 +3,7 @@ import '../src/Css/Landing_about.css'
 
 export const Landing_about = () => {
   return (
-    <div className='Landing_about'>
+    <div id="about" className='Landing_about'>
       <div className='img'>
           <img src="../src/assets/Group 6.png" alt="image" />
         <svg width="695" height="694" viewBox="0 0 695 694" fill="none" xmlns="http://www.w3.org/2000/svg">
