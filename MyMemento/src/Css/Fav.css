@@ -20,6 +20,7 @@
 }
 .favourite_wrapper .empty-fav {
   position: absolute;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   top: 50%;

@@ -7,8 +7,8 @@ export const Landing_contacts = () => {
   return (
     <div className='Landing_contacts_main'>
       <div className="Landing_contacts">
-        <div className="rdinfo">
-          <div className="rd">
+        <div className="rdinfo team_info">
+          <div className="rd team-img">
             <img src="../src/assets/rohit.jpeg" alt="Rohit" />
           </div>
           <div className="rohit">
@@ -23,23 +23,21 @@ export const Landing_contacts = () => {
             </div>
           </div>
         </div>
-        <div className="asbinfo">
-          <div className="rohit">
+        <div className="asbinfo team_info">
+          <div className="anurag">
             <div className='Nameandcontact'>
               <p>ANURAG SINGH BAGHEL</p>
               <span>WEB DEVELOPER</span>
             </div>
-            <div className="rohit_contacts">
+            <div className="anurag_contacts">
               <i className="fa-brands fa-facebook"></i>
               <i className="fa-brands fa-github"></i>
               <i className="fa-brands fa-linkedin"></i>
             </div>
           </div>
-          <div className="asb">
+          <div className="asb team-img">
             <img src="../src/assets/anurag.jpeg" alt="Rohit" />
-
           </div>
-
         </div>
       </div>
       <div className="contactus">
