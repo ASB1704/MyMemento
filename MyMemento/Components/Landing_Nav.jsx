@@ -29,7 +29,7 @@ export const Landing_Nav = () => {
         </div>
         <div className='Navright'>
             <a href="">HOME</a>
-            <a href="">ABOUT</a>
+            <a href="#about">ABOUT</a>
             <a href="">CONTACT US</a>
             <a href="#" onClick={(e)=>{
               e.preventDefault();
