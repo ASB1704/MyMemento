@@ -8,117 +8,95 @@
   height: 80vh;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 10rem;
 }
-.Landing_contacts .rdinfo {
-  display: flex;
-  height: 27vh;
-  width: 12vw;
+.Landing_contacts .team_info {
+  display: grid;
+  height: 12rem;
+  width: 12rem;
   border-radius: 10rem;
-  justify-content: flex-start;
   align-items: center;
   transition: all 0.3s linear;
-}
-.Landing_contacts .rdinfo:hover {
-  width: 30vw;
-  padding: 0.7rem;
-  background-color: #1C2A4A;
+  padding: 0.5rem 3rem 0.5rem 0.5rem;
+  cursor: pointer;
   gap: 2rem;
+  position: relative;
+  overflow: hidden;
 }
-.Landing_contacts .rdinfo:hover .rohit {
-  overflow: auto;
-  width: 13vw;
+.Landing_contacts .team_info:hover {
+  background-color: #1C2A4A;
+  width: 30rem;
 }
-.Landing_contacts .rdinfo .rd {
+.Landing_contacts .team_info:hover .rohit {
+  color: #fff;
+}
+.Landing_contacts .team_info .team-img {
+  position: absolute;
   background-color: #fff;
-  height: 100%;
-  width: 12vw;
   border-radius: 10rem;
   cursor: pointer;
   overflow: hidden;
+  width: 11rem;
+  height: 11rem;
+  left: 2%;
 }
-.Landing_contacts .rdinfo .rd img {
+.Landing_contacts .team_info .team-img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
-.Landing_contacts .rdinfo .rohit {
+.Landing_contacts .team_info .rohit {
   display: flex;
   flex-direction: column;
-  color: #fff;
+  color: transparent;
   gap: 2rem;
-  width: 0;
   overflow: hidden;
+  justify-self: flex-end;
+  width: 15rem;
 }
-.Landing_contacts .rdinfo .rohit .Nameandcontact {
+.Landing_contacts .team_info .rohit .Nameandcontact {
   font-family: "Cormorant Garamond", serif;
   display: flex;
   flex-direction: column;
   align-items: end;
 }
-.Landing_contacts .rdinfo .rohit .Nameandcontact p {
+.Landing_contacts .team_info .rohit .Nameandcontact p {
   font-size: 1.5rem;
 }
-.Landing_contacts .rdinfo .rohit .rohit_contacts {
+.Landing_contacts .team_info .rohit .rohit_contacts {
   display: flex;
   justify-content: space-around;
 }
 .Landing_contacts .asbinfo {
-  display: flex;
-  height: 27vh;
-  width: 12vw;
-  border-radius: 10rem;
-  justify-content: flex-end;
-  align-items: center;
-  transition: all 0.3s linear;
+  padding-right: 1rem;
 }
 .Landing_contacts .asbinfo:hover {
-  width: 30vw;
-  padding: 0.7rem;
-  background-color: #1C2A4A;
-  gap: 2rem;
+  width: 30rem;
 }
-.Landing_contacts .asbinfo:hover .rohit {
-  overflow: auto;
-  width: 13vw;
+.Landing_contacts .asbinfo:hover .anurag {
+  color: #fff;
 }
-.Landing_contacts .asbinfo .asb {
-  background-color: #fff;
-  height: 100%;
-  width: 12vw;
-  border-radius: 10rem;
-  cursor: pointer;
-  overflow: hidden;
-}
-.Landing_contacts .asbinfo .asb img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.Landing_contacts .asbinfo .rohit {
-  width: 0;
+.Landing_contacts .asbinfo .anurag {
+  width: 15rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  color: #fff;
+  color: transparent;
   gap: 2rem;
+  justify-self: flex-end;
 }
-.Landing_contacts .asbinfo .rohit .Nameandcontact {
+.Landing_contacts .asbinfo .anurag .Nameandcontact {
   font-family: "Cormorant Garamond", serif;
   display: flex;
   flex-direction: column;
   align-items: start;
 }
-.Landing_contacts .asbinfo .rohit .Nameandcontact p {
+.Landing_contacts .asbinfo .anurag .Nameandcontact p {
   font-size: 1.5rem;
 }
-.Landing_contacts .asbinfo .rohit .rohit_contacts {
+.Landing_contacts .asbinfo .anurag .anurag_contacts {
   display: flex;
-  justify-content: space-evenly;
+  gap: 2rem;
 }
 
 .contactus {
@@ -138,4 +116,10 @@
 .contactus .contact_icons {
   display: flex;
   gap: 3rem;
+}
+
+@media screen and (max-width: 786px) {
+  .Landing_contacts {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=Landing_contacts.css.map */
