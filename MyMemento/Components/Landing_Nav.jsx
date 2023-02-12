@@ -2,13 +2,14 @@ import {React,useState,useEffect} from 'react'
 import { useNavigate } from 'react-router-dom';
 import YourSvg from  '../src/assets/LOGO.svg';
 import '../src/Css/Landing_Nav.css'
+import { Logo } from './Logo';
 
 export const Landing_Nav = () => {
   const nav = useNavigate();
   
     const [show, setShow] = useState(false)
     const controlNavbar = () => {
-        if (window.scrollY > 600 ) {
+        if (window.scrollY > 500 ) {
             setShow(true)
         }else{
           setShow(false)
@@ -24,7 +25,7 @@ export const Landing_Nav = () => {
   return (
     <div className={`LandingNav ${show && 'active'}`}>
         <div className='Navleft'>
-        <img src={YourSvg} alt="Your SVG" />
+          <Logo show={show}/>
         </div>
         <div className='Navright'>
             <a href="">HOME</a>

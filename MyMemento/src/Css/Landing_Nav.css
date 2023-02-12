@@ -6,16 +6,20 @@
   display: flex;
   align-items: center;
   height: 4rem;
+  transition: all 0.3s linear;
 }
 .LandingNav .Navleft {
   position: absolute;
   left: 5%;
 }
-.LandingNav img {
-  font-weight: bold;
+.LandingNav svg {
   height: 3rem;
-  filter: brightness(0.05);
-  border: none;
+}
+.LandingNav svg path {
+  fill: #000;
+}
+.LandingNav .logo-active path {
+  fill: #fff;
 }
 .LandingNav .Navright {
   padding-right: 1rem;
