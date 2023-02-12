@@ -1,18 +1,164 @@
-.Landing_contacts{
-    border: 2px solid red;
-  background-color: #ffeddf;
-  height: 100vh;
+.Landing_contacts_main {
   display: flex;
+  flex-direction: column;
+}
+
+.Landing_contacts {
+  background-color: #ffeddf;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  .rdinfo{
-    border: 2px soild red;
-    height: 20vh;
-  }
-  .asbinfo{
-    border: 2px soild red;
-    height: 20vh;
+  gap: 10rem;
 
+  .rdinfo {
+    display: flex;
+    height: 27vh;
+    width: 12vw;
+    border-radius: 10rem;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.3s linear;
+
+    &:hover {
+      width: 30vw;
+      padding: 0.7rem;
+      background-color: #1C2A4A;
+      gap: 2rem;
+
+    }
+    &:hover .rohit {
+      overflow: auto;
+      width: 13vw;
+    }
+
+    .rd {
+      background-color: #fff;
+      height: 100%;
+      width: 12vw;
+      border-radius: 10rem;
+      cursor: pointer;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+    }
+
+    .rohit {
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+      gap: 2rem;
+      width: 0;
+      overflow: hidden;
+      
+
+      .Nameandcontact {
+        font-family: 'Cormorant Garamond', serif;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        p {
+          font-size: 1.5rem;
+        }
+      }
+
+      .rohit_contacts {
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+  }
+
+  .asbinfo {
+    display: flex;
+    height: 27vh;
+    width: 12vw;
+    border-radius: 10rem;
+    justify-content: flex-end;
+    align-items: center;
+    transition: all 0.3s linear;
+
+    &:hover {
+      width: 30vw;
+      padding: 0.7rem;
+      background-color: #1C2A4A;
+      gap: 2rem;
+
+    }
+    &:hover .rohit {
+      overflow: auto;
+      width: 13vw;
+    }
+
+    .asb {
+      background-color: #fff;
+      height: 100%;
+      width: 12vw;
+      border-radius: 10rem;
+      cursor: pointer;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .rohit {
+      width: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+      gap: 2rem;
+
+      .Nameandcontact {
+        font-family: 'Cormorant Garamond', serif;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        p {
+          font-size: 1.5rem;
+        }
+      }
+
+      .rohit_contacts{
+        display: flex;
+        justify-content: space-evenly;
+
+      }
+    }
+
+  }
+
+}
+
+.contactus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #1C2A4A;
+  height: 18vh;
+  gap: 1.5rem;
+
+  p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: larger;
+  }
+
+  .contact_icons {
+    display: flex;
+    gap: 3rem;
   }
 
 }
