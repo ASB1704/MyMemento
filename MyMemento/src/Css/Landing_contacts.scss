@@ -70,6 +70,9 @@
       .rohit_contacts {
         display: flex;
         justify-content: space-around;
+        a{
+          color: #fff;
+            }
       }
     }
    
@@ -105,7 +108,10 @@
 
       .anurag_contacts{
         display: flex;
-        gap: 2rem;
+        justify-content: space-evenly;
+          a{
+        color: #fff;
+          }
       }
     }
 

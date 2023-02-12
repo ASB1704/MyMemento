@@ -31,6 +31,7 @@
     }
 
     .navright {
+        position: relative;
         display: flex;
         align-items: center;
         gap: 2rem;
@@ -61,6 +62,26 @@
             width: 2rem;
             aspect-ratio: 1;
             border-radius: 50%;
+        }
+        .profile{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            transform: scale(0);
+            top: 3rem;
+            transition: all 0.2s linear;
+            transform-origin: top;
+        }
+        .showprofile{
+            position: absolute;
+            transform: scale(1);
+            top: 3rem;
+            width: 10rem;
+            padding: 0.5rem;
+            background-color: #4a72cf;
+            display: flex;
+            flex-direction: column;
+            z-index: 99999999;
         }
     }
 }

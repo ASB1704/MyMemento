@@ -67,6 +67,9 @@
   display: flex;
   justify-content: space-around;
 }
+.Landing_contacts .team_info .rohit .rohit_contacts a {
+  color: #fff;
+}
 .Landing_contacts .asbinfo {
   padding-right: 1rem;
 }
@@ -96,7 +99,10 @@
 }
 .Landing_contacts .asbinfo .anurag .anurag_contacts {
   display: flex;
-  gap: 2rem;
+  justify-content: space-evenly;
+}
+.Landing_contacts .asbinfo .anurag .anurag_contacts a {
+  color: #fff;
 }
 
 .contactus {

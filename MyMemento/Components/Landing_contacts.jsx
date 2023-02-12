@@ -5,7 +5,7 @@ export const Landing_contacts = () => {
   
 
   return (
-    <div className='Landing_contacts_main'>
+    <div className='Landing_contacts_main' id='contact_us'>
       <div className="Landing_contacts">
         <div className="rdinfo team_info">
           <div className="rd team-img">
@@ -17,9 +17,9 @@ export const Landing_contacts = () => {
               <span>WEB DEVELOPER</span>
             </div>
             <div className="rohit_contacts">
-              <i className="fa-brands fa-facebook"></i>
-              <i className="fa-brands fa-github"></i>
-              <i className="fa-brands fa-linkedin"></i>
+              <a href=""><i className="fa-brands fa-facebook" ></i></a>
+              <a href=""><i className="fa-brands fa-github"></i></a>
+              <a href=""><i className="fa-brands fa-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -30,9 +30,9 @@ export const Landing_contacts = () => {
               <span>WEB DEVELOPER</span>
             </div>
             <div className="anurag_contacts">
-              <i className="fa-brands fa-facebook"></i>
-              <i className="fa-brands fa-github"></i>
-              <i className="fa-brands fa-linkedin"></i>
+            <a href=""><i className="fa-brands fa-facebook" ></i></a>
+              <a href=""><i className="fa-brands fa-github"></i></a>
+              <a href=""><i className="fa-brands fa-linkedin"></i></a>
             </div>
           </div>
           <div className="asb team-img">

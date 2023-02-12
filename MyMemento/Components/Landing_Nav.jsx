@@ -30,7 +30,7 @@ export const Landing_Nav = () => {
         <div className='Navright'>
             <a href="">HOME</a>
             <a href="#about">ABOUT</a>
-            <a href="">CONTACT US</a>
+            <a href="#contact_us">CONTACT US</a>
             <a href="#" onClick={(e)=>{
               e.preventDefault();
               nav('/login');

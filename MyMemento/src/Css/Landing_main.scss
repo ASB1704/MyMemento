@@ -1,7 +1,7 @@
 .Landing_main{
     position: relative;
     display: flex;
-    height: 91vh;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     background-color: #1C2A4A;
@@ -17,6 +17,7 @@
             width: 15rem;
         }
         button{
+            cursor: pointer;
             font-family: 'Lora', serif;
             display: flex;
             gap: 1rem;
