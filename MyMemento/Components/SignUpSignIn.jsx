@@ -12,7 +12,7 @@ const loginHandler = async (e,nav)=>{
     const user = result.user;
     console.log(typeof(user));
     localStorage.setItem('auth',JSON.stringify(user));
-    nav('/app');
+    nav('/app/photo');
   } catch (e) {
     console.log(e);
   }
