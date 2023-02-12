@@ -10,7 +10,7 @@ export const Landing_main = () => {
       <div className="Getstarted">
       <img src={YourSvg} alt="Your SVG" />
        <button onClick={()=>{
-          localStorage.getItem('auth') ? nav('/app') : nav('/login');
+          localStorage.getItem('auth') ? nav('/app/photo') : nav('/login');
         }}>
         <p>GET STARTED </p>
         <i className="fa-solid fa-angles-right"></i>
